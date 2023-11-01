@@ -7,13 +7,9 @@ menu_button.addEventListener('click', () => {
   if (header.classList.contains('is-menu-open')) {
     header.classList.remove('is-menu-open');
     header.classList.add('is-menu-close');
-    // スクロール解除
-    body.style.overflowY = "scroll";
   } else {
     header.classList.remove('is-menu-close');
     header.classList.add('is-menu-open');
-    // スクロール禁止
-    body.style.overflowY = "hidden";
   }
 });
 
@@ -23,8 +19,6 @@ sp_menu_items.forEach((item) => {
   item.addEventListener('click', () => {
     header.classList.remove('is-menu-open');
     header.classList.add('is-menu-close');
-    // スクロール解除
-    body.style.overflowY = "scroll";
 });
 });
 
@@ -33,8 +27,6 @@ const overlay = document.querySelector('.sp-menu_overlay');
 overlay.addEventListener('click', () => {
   header.classList.remove('is-menu-open');
   header.classList.add('is-menu-close');
-  // スクロール解除
-  body.style.overflowY = "scroll";
 });
 
 
