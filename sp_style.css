@@ -16,8 +16,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: #0051e0;
-    background: #222;
+    background: #22304e;
     margin: 0 auto 6px;
     transition-property: all;
     transition-duration: .4s;
@@ -30,10 +29,6 @@
 
   .sp-menu-button_line:last-child {
     margin-bottom: 0;
-  }
-
-  .is-menu-open .sp-menu-button_line {
-    background: #222;
   }
 
   .is-menu-open .sp-menu-button_line--1 {
@@ -172,14 +167,14 @@
   .sp-menu-item {
     margin-bottom: 40px;
     padding-bottom: 5px;
-    border-bottom: #2d3465 1px solid;
+    border-bottom: #22304e 1px solid;
   }
 
   .sp-menu-item a {
     width: 100%;
     font-size: 19px;
     font-weight: 400;
-    color: #2d3465;
+    color: #22304e;
   }
 
 
