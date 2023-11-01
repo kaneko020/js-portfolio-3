@@ -9,7 +9,7 @@
 
   .sp-menu-button {
     cursor: pointer;
-    z-index: 1002;
+    z-index: 120;
   }
 
   .sp-menu-button_line {
@@ -146,11 +146,12 @@
 
   .sp-menu_content {
     position: fixed;
-    z-index: 999;
+    z-index: 100;
     top: 0;
     right: -100%;
     background: #fff;
-    width: 350px;
+    width: 380px;
+    /* width: 100%; */
     height: 100vh;
     transition: all .5s;
   }
@@ -172,18 +173,34 @@
 
   .sp-menu-item a {
     width: 100%;
-    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
     font-weight: 400;
     color: #22304e;
+    padding: 0 10px;
+  }
+
+  .sp-menu-item a span {
+    font-size: 15px;
+    color: #6b6b6b;
+    margin-left: 20px;
   }
 
 
+  .footer-inner {
+    padding: 20px;
+  }
 
   .footer-menu {
-    width: 50%;
+    flex-flow: column;
   }
 
   .footer-menu-item::after {
     content: "";
+  }
+
+  .footer-logo, .footer-copyright {
+    right: 30px;
   }
 }

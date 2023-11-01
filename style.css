@@ -49,6 +49,7 @@ img {
   display: flex;
   align-items: center;
   color: #22304e;
+  font-size: 15px;
   font-weight: 500;
 }
 

@@ -28,15 +28,3 @@ overlay.addEventListener('click', () => {
   header.classList.remove('is-menu-open');
   header.classList.add('is-menu-close');
 });
-
-
-// PCヘッダーメニューのアクティブクラスを切り替える
-const header_menu_items = document.querySelectorAll('.header-menu-item');
-header_menu_items.forEach((item) => {
-  item.addEventListener('click', () => {
-    header_menu_items.forEach((item) => {
-      item.classList.remove('is-active');
-    });
-    item.classList.add('is-active');
-  });
-});
