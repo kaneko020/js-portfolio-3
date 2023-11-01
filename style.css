@@ -2,5 +2,155 @@
 
 body {
   font-family: "Noto Sans", "Noto Sans JP", YuGothic, YuGothicM, "メイリオ", sans-serif;
-  /* font-family: "Teko", sans-serif; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header-logo {
+  width: 180px;
+}
+
+.header-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-menu-item {
+  height: 100%;
+}
+
+.header-menu-item a {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #2d3465;
+  font-weight: 600;
+}
+
+.header-menu-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #4570ba;
+  transition: opacity .2s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.header-menu-item a:hover {
+  color: #4570ba;
+}
+
+.header-menu-item a:hover::after {
+  opacity: 1;
+}
+
+.header-menu-item.is_active a {
+  color: #4570ba;
+}
+
+.header-menu-item.is_active a::after {
+  opacity: 1;
+}
+
+.content {
+  height: 1000px;
+}
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f6f8ff;
+}
+
+.footer-inner {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.footer-sns {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-sns-item {
+  font-size: 25px;
+  color: #2d3465;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-menu-item {
+  display: flex;
+  font-size: 14px;
+  color: #2d3465;
+  gap: 10px;
+}
+
+.footer-menu-item::after {
+  content: "|";
+  display: block;
+}
+
+.footer-menu-item:last-child::after {
+  content: "";
+}
+
+.footer-sns-item:hover, .footer-menu-item a:hover, .privacy:hover {
+  opacity: .7;
+}
+
+.privacy {
+  font-size: 13px;
+  color: #505050;
+}
+
+.footer-logo {
+  width: 150px;
+  position: absolute;
+  bottom: 45px;
+  right: 50px;
+}
+
+.footer-copyright {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  font-size: 14px;
+  color: #868686;
 }
