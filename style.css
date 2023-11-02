@@ -17,12 +17,8 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
-  /* background: #fff; */
-  border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
-}
-
-.header:hover {
   background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 .header-inner {
@@ -54,14 +50,9 @@ img {
   height: 100%;
   display: flex;
   align-items: center;
-  /* color: #192131; */
-  color: #fff;
+  color: #192131;
   font-size: 15px;
   font-weight: 400;
-}
-
-.header:hover .header-menu-item a {
-  color: #192131;
 }
 
 .header-menu-item a::after {
@@ -77,7 +68,7 @@ img {
 }
 
 .header-menu-item a:hover, .header-menu-item.is-active a {
-  color: #3a5f9f !important;
+  color: #3a5f9f;
 }
 
 .header-menu-item a:hover::after, .header-menu-item.is-active a::after {
@@ -87,36 +78,55 @@ img {
 .main {
   width: 100%;
   height: 100%;
-  background: #507dd0;
+  margin-top: 90px;
 }
 
-.content {
-  width: 100%;
-  height: 100%;
-  padding-top: 90px;
+.top {
+  position: relative;
+  height: auto;
+  padding: 0 8%;
+  overflow: hidden;
 }
 
-.top-inner {
+.top::before {
+  background: none;
+}
+
+.top-left {
+  width: 65%;
+  max-width: 700px;
+  background: #698098;
+  overflow: hidden;
+}
+
+.top-left::before {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #fff;
 }
 
 .top-img {
-  width: 60%;
-  max-width: 600px;
-  border-radius: 50%;
-  border: #fff 10px solid;
-  overflow: hidden;
-  margin: 40px;
+  position: relative;
+  padding: 0 60px 57px 0;
+  vertical-align: top;
 }
 
 .top-text {
-  width: 40%;
-  color: #fff;
-  letter-spacing: 5px;
+  position: absolute;
+  bottom: 40%;
+  right: 10%;
+  min-width: 450px;
+  letter-spacing: 3px;
   text-align: center;
+  color: #22304e;
+  background: rgba(255,255,255,0.6);
+  padding: 10px;
+  border-bottom: #868686 1px solid;
+  border-right: #868686 1px solid;
 }
 
 .top-text h2 {
@@ -128,7 +138,6 @@ img {
 .top-text p {
   font-size: 30px;
   font-weight: 400;
-  /* letter-spacing: 5px; */
 }
 
 
