@@ -17,8 +17,12 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
+  /* background: #fff; */
+  border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
+}
+
+.header:hover {
   background: #fff;
-  border-bottom: #a8a8a8 1px solid;
 }
 
 .header-inner {
@@ -50,9 +54,14 @@ img {
   height: 100%;
   display: flex;
   align-items: center;
-  color: #192131;
+  /* color: #192131; */
+  color: #fff;
   font-size: 15px;
   font-weight: 400;
+}
+
+.header:hover .header-menu-item a {
+  color: #192131;
 }
 
 .header-menu-item a::after {
@@ -68,59 +77,60 @@ img {
 }
 
 .header-menu-item a:hover, .header-menu-item.is-active a {
-  color: #3a5f9f;
+  color: #3a5f9f !important;
 }
 
 .header-menu-item a:hover::after, .header-menu-item.is-active a::after {
   opacity: 1;
 }
 
-.content {
-  margin-top: 90px;
+.main {
   width: 100%;
   height: 100%;
+  background: #507dd0;
 }
 
-.top {
-  background: #2e3c57;
-  padding-left: 70px;
-  padding-bottom: 30px;
+.content {
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
 }
 
 .top-inner {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  background: #fff;
-}
-
-.top-text {
-  padding: 30px;
-  
+  justify-content: center;
+  align-items: center;
 }
 
 .top-img {
-  width: calc(60% - 70px);
+  width: 60%;
+  max-width: 600px;
+  border-radius: 50%;
+  border: #fff 10px solid;
+  overflow: hidden;
+  margin: 40px;
 }
 
-.top-right, .top-bottom {
+.top-text {
+  width: 40%;
   color: #fff;
-  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.top-text h2 {
+  font-size: 50px;
   font-weight: 600;
-  letter-spacing: 10px;
+  margin-bottom: 20px;
 }
 
-.top-right {
-  position: relative;
-  left: -50px;
-  writing-mode: vertical-rl;
-  text-align: end;
+.top-text p {
+  font-size: 30px;
+  font-weight: 400;
+  /* letter-spacing: 5px; */
 }
 
-.top-bottom {
-  position: relative;
-  left: -40px;
-  padding-top: 10px;
-}
 
 .info {
   padding: 50px 30px;
@@ -131,11 +141,12 @@ img {
   justify-content: center;
   font-size: 22px;
   font-weight: 500;
-  color: #192131;
+  color: #f4f4f4;
   padding-bottom: 20px;
 }
 
 
+/* フッター */
 .footer {
   position: relative;
   width: 100%;

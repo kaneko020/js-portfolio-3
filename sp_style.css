@@ -7,6 +7,14 @@
     display: block;
   }
 
+  .header:hover {
+    background: none;
+  }
+
+  .header-inner {
+    padding: 0 20px;
+  }
+
   .sp-menu-button {
     cursor: pointer;
     z-index: 120;
@@ -16,7 +24,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: #22304e;
+    background: #fff;
     margin: 0 auto 6px;
     transition-property: all;
     transition-duration: .4s;
@@ -32,12 +40,14 @@
   }
 
   .is-menu-open .sp-menu-button_line--1 {
+    background: #22304e;
     animation-name: menu1In;
   }
   .is-menu-open .sp-menu-button_line--2 {
     animation-name: menu2In;
   }
   .is-menu-open .sp-menu-button_line--3 {
+    background: #22304e;
     animation-name: menu3In;
   }
 
