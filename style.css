@@ -142,7 +142,7 @@ img {
 
 
 .info {
-  padding: 50px 30px;
+  padding: 50px;
 }
 
 .info-title {
@@ -150,7 +150,7 @@ img {
   justify-content: center;
   font-size: 22px;
   font-weight: 500;
-  color: #f4f4f4;
+  color: #192131;
   padding-bottom: 20px;
 }
 

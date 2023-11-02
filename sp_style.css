@@ -24,7 +24,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: #22304e;
+    background: #192131;
     margin: 0 auto 6px;
     transition-property: all;
     transition-duration: .4s;
@@ -40,14 +40,14 @@
   }
 
   .is-menu-open .sp-menu-button_line--1 {
-    background: #22304e;
+    background: #192131;
     animation-name: menu1In;
   }
   .is-menu-open .sp-menu-button_line--2 {
     animation-name: menu2In;
   }
   .is-menu-open .sp-menu-button_line--3 {
-    background: #22304e;
+    background: #192131;
     animation-name: menu3In;
   }
 
@@ -178,7 +178,7 @@
   .sp-menu-item {
     margin-bottom: 40px;
     padding-bottom: 5px;
-    border-bottom: #22304e 1px solid;
+    border-bottom: #192131 1px solid;
   }
 
   .sp-menu-item a {
@@ -187,7 +187,7 @@
     justify-content: space-between;
     font-size: 17px;
     font-weight: 400;
-    color: #22304e;
+    color: #192131;
     padding: 0 10px;
   }
 
